@@ -1,1 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="GlycoLess Terms and Conditions — rules for using the GlycoLess Android application."
+  >
+
+  <meta
+    name="theme-color"
+    content="#10B981"
+  >
+
+  <title>Terms & Conditions — GlycoLess</title>
+
+  <style>
+    :root {
+      --mint: #10B981;
+      --teal: #0F766E;
+      --bg: #F4FBF8;
+      --surface: #FFFFFF;
+      --soft: #ECFDF5;
+      --text: #10231F;
+      --muted: #52635F;
+      --border: #DCEBE6;
+      --warning-bg: #FFF7ED;
+      --warning-text: #7C2D12;
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background:
+        linear-gradient(
+          180deg,
+          #F8FCFA 0%,
+          #F1FAF7 100%
+        );
+
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(1050px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    /* Header */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: rgba(255, 255, 255, 0.92);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 70px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+
+      color: var(--text);
+      font-size: 19px;
+      font-weight: 800;
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--mint),
+          var(--teal)
+        );
+
+      color: white;
+      font-weight: 800;
+    }
+
+    .back {
+      padding: 9px 13px;
+
+      border-radius: 10px;
+
+      background: var(--soft);
+
+      color: var(--teal);
+
+      font-size: 13px;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 64px 0 34px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 7px 12px;
+
+      border-radius: 999px;
+
+      background: var(--soft);
+      color: var(--teal);
+
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--mint);
+    }
+
+    h1 {
+      margin-top: 18px;
+
+      font-size: clamp(34px, 6vw, 54px);
+      line-height: 1.08;
+
+      letter-spacing: -2px;
+    }
+
+    .intro {
+      max-width: 760px;
+
+      margin-top: 16px;
+
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .date {
+      margin-top: 14px;
+
+      color: #71817D;
+      font-size: 13px;
+    }
+
+    /* Main layout */
+
+    .layout {
+      display: grid;
+
+      grid-template-columns:
+        230px minmax(0, 1fr);
+
+      gap: 34px;
+
+      padding: 30px 0 80px;
+    }
+
+    /* TOC */
+
+    .toc {
+      position: sticky;
+      top: 100px;
+
+      align-self: start;
+
+      padding: 18px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .toc-title {
+      margin-bottom: 10px;
+
+      color: var(--teal);
+
+      font-size: 12px;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .toc a {
+      display: block;
+
+      padding: 7px 4px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .toc a:hover {
+      color: var(--teal);
+      text-decoration: none;
+    }
+
+    /* Content */
+
+    .content {
+      min-width: 0;
+    }
+
+    .notice {
+      margin-bottom: 20px;
+      padding: 20px;
+
+      border-radius: var(--radius);
+
+      background:
+        linear-gradient(
+          135deg,
+          #E9FAF3,
+          #F7FCFA
+        );
+
+      border: 1px solid #CDEDE2;
+    }
+
+    .notice strong {
+      color: var(--teal);
+    }
+
+    .card {
+      margin-bottom: 18px;
+      padding: 28px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      box-shadow:
+        0 10px 30px rgba(15, 118, 110, 0.055);
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+
+      font-size: 24px;
+      line-height: 1.25;
+
+      letter-spacing: -0.5px;
+    }
+
+    .card h3 {
+      margin-top: 20px;
+      margin-bottom: 7px;
+
+      font-size: 17px;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .card ul {
+      margin: 8px 0 14px 20px;
+
+      color: var(--muted);
+    }
+
+    .card li {
+      margin: 6px 0;
+      padding-left: 4px;
+    }
+
+    .important {
+      padding: 18px;
+
+      margin-top: 12px;
+
+      border-left: 4px solid #F97316;
+
+      background: var(--warning-bg);
+
+      border-radius: 12px;
+
+      color: var(--warning-text);
+
+      font-size: 14px;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 30px 0;
+
+      background: #09211E;
+
+      color: #9DB5AF;
+
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-links a {
+      color: #C7D9D5;
+      font-size: 13px;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+
+      .toc a {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(100% - 28px, 1050px);
+      }
+
+      .hero {
+        padding-top: 42px;
+      }
+
+      .layout {
+        padding-top: 18px;
+      }
+
+      .card {
+        padding: 21px;
+      }
+
+      .card h2 {
+        font-size: 21px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+    <div class="container nav">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="GlycoLess home"
+      >
+        <span class="brand-mark">G</span>
+        <span>GlycoLess</span>
+      </a>
+
+      <a
+        class="back"
+        href="index.html"
+      >
+        ← Legal Center
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        <span class="dot"></span>
+        Legal
+      </span>
+
+      <h1>
+        Terms & Conditions
+      </h1>
+
+      <p class="intro">
+        These Terms & Conditions describe
+        the rules and conditions that apply
+        when using the GlycoLess Android
+        application and related services.
+      </p>
+
+      <p class="date">
+        Effective date: September 20, 2026
+        &nbsp;·&nbsp;
+        Last updated: September 20, 2026
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Main -->
+
+  <main class="container layout">
+
+    <!-- Table of contents -->
+
+    <aside class="toc">
+
+      <div class="toc-title">
+        On this page
+      </div>
+
+      <a href="#acceptance">
+        1. Acceptance
+      </a>
+
+      <a href="#service">
+        2. Service
+      </a>
+
+      <a href="#health">
+        3. Health Disclaimer
+      </a>
+
+      <a href="#accounts">
+        4. Accounts
+      </a>
+
+      <a href="#data">
+        5. User Data
+      </a>
+
+      <a href="#nutrition">
+        6. Nutrition Data
+      </a>
+
+      <a href="#scanner">
+        7. Scanner
+      </a>
+
+      <a href="#premium">
+        8. Premium
+      </a>
+
+      <a href="#third-party">
+        9. Third Parties
+      </a>
+
+      <a href="#availability">
+        10. Availability
+      </a>
+
+      <a href="#ip">
+        11. Intellectual Property
+      </a>
+
+      <a href="#termination">
+        12. Termination
+      </a>
+
+      <a href="#liability">
+        13. Liability
+      </a>
+
+      <a href="#law">
+        14. Governing Law
+      </a>
+
+      <a href="#contact">
+        15. Contact
+      </a>
+
+    </aside>
+
+
+    <section class="content">
+
+      <div class="notice">
+
+        <strong>
+          Important:
+        </strong>
+
+        GlycoLess provides tracking,
+        nutrition information and educational
+        tools. It does not replace professional
+        medical advice, diagnosis or treatment.
+      </div>
+
+
+      <!-- 1 -->
+
+      <article
+        class="card"
+        id="acceptance"
+      >
+
+        <h2>
+          1. Acceptance of These Terms
+        </h2>
+
+        <p>
+          By downloading, accessing or using
+          GlycoLess, you agree to these Terms
+          & Conditions and the
+          <a href="privacy-policy.html">
+            Privacy Policy
+          </a>.
+        </p>
+
+        <p>
+          If you do not agree with these terms,
+          you should not use the application.
+        </p>
+
+      </article>
+
+
+      <!-- 2 -->
+
+      <article
+        class="card"
+        id="service"
+      >
+
+        <h2>
+          2. GlycoLess Service
+        </h2>
+
+        <p>
+          GlycoLess is an Android application
+          designed to help users track sugar
+          intake, record food information,
+          understand nutrition information,
+          review progress, and access educational
+          content.
+        </p>
+
+        <p>
+          Features may change over time as the
+          application is updated.
+        </p>
+
+      </article>
+
+
+      <!-- 3 -->
+
+      <article
+        class="card"
+        id="health"
+      >
+
+        <h2>
+          3. Health and Medical Disclaimer
+        </h2>
+
+        <p>
+          GlycoLess is not a medical device and
+          is not intended to diagnose, treat,
+          cure, prevent, or manage a disease.
+        </p>
+
+        <p>
+          Information shown in the application
+          is intended for general tracking,
+          education and informational purposes.
+        </p>
+
+        <p>
+          Nutrition values, food information,
+          recommendations and educational
+          content may not be complete or
+          appropriate for every individual.
+        </p>
+
+        <div class="important">
+
+          Do not use GlycoLess as a substitute
+          for advice from a qualified doctor,
+          registered dietitian, nutritionist,
+          pharmacist or other healthcare
+          professional.
+
+        </div>
+
+      </article>
+
+
+      <!-- 4 -->
+
+      <article
+        class="card"
+        id="accounts"
+      >
+
+        <h2>
+          4. Accounts and Guest Mode
+        </h2>
+
+        <h3>
+          Guest use
+        </h3>
+
+        <p>
+          GlycoLess may allow supported features
+          to be used without creating an account.
+          Guest tracking data is intended to remain
+          local to the device unless the user
+          later creates an account and chooses to
+          migrate supported data.
+        </p>
+
+        <h3>
+          Registered accounts
+        </h3>
+
+        <p>
+          Users may create an account using the
+          authentication methods provided by the
+          application.
+        </p>
+
+        <p>
+          You are responsible for maintaining
+          reasonable control of your account and
+          authentication credentials.
+        </p>
+
+      </article>
+
+
+      <!-- 5 -->
+
+      <article
+        class="card"
+        id="data"
+      >
+
+        <h2>
+          5. User Data
+        </h2>
+
+        <p>
+          You retain responsibility for the
+          information you enter into GlycoLess.
+        </p>
+
+        <p>
+          You should not enter information that
+          you do not have the right to provide.
+        </p>
+
+        <p>
+          Data handling is described in greater
+          detail in the
+          <a href="privacy-policy.html">
+            Privacy Policy
+          </a>.
+        </p>
+
+      </article>
+
+
+      <!-- 6 -->
+
+      <article
+        class="card"
+        id="nutrition"
+      >
+
+        <h2>
+          6. Nutrition and Food Information
+        </h2>
+
+        <p>
+          GlycoLess may display nutrition,
+          ingredient, serving or product
+          information obtained from user input,
+          product databases, barcode services,
+          or other sources.
+        </p>
+
+        <p>
+          Such information may contain errors,
+          missing values, outdated information,
+          regional differences or differences
+          between product formulations.
+        </p>
+
+        <p>
+          Users should verify important nutrition
+          information using the product packaging
+          or another reliable source when accuracy
+          is important.
+        </p>
+
+      </article>
+
+
+      <!-- 7 -->
+
+      <article
+        class="card"
+        id="scanner"
+      >
+
+        <h2>
+          7. Barcode and Scanning Features
+        </h2>
+
+        <p>
+          GlycoLess may provide barcode or
+          scanning functionality for supported
+          food products.
+        </p>
+
+        <p>
+          A successful scan does not automatically
+          mean that a food item has been added to
+          your personal food log. Users remain
+          responsible for reviewing information
+          before saving it.
+        </p>
+
+        <p>
+          If product information cannot be found,
+          GlycoLess may provide a manual-entry
+          alternative where supported.
+        </p>
+
+      </article>
+
+
+      <!-- 8 -->
+
+      <article
+        class="card"
+        id="premium"
+      >
+
+        <h2>
+          8. Premium Features and Purchases
+        </h2>
+
+        <p>
+          GlycoLess may offer paid premium
+          features or subscriptions through
+          Google Play.
+        </p>
+
+        <p>
+          Pricing, billing periods, introductory
+          offers, renewal terms and availability
+          are presented through Google Play and
+          may vary by region or product.
+        </p>
+
+        <p>
+          Payments are processed through the
+          applicable Google Play billing system,
+          subject to Google's applicable terms
+          and policies.
+        </p>
+
+        <p>
+          Cancellation of a subscription should
+          be managed through the applicable
+          Google Play subscription controls.
+        </p>
+
+        <p>
+          Uninstalling GlycoLess does not
+          necessarily cancel an active Google
+          Play subscription.
+        </p>
+
+      </article>
+
+
+      <!-- 9 -->
+
+      <article
+        class="card"
+        id="third-party"
+      >
+
+        <h2>
+          9. Third-Party Services
+        </h2>
+
+        <p>
+          Some GlycoLess functionality may rely
+          on third-party services.
+        </p>
+
+        <p>
+          Depending on the production version,
+          these services may include Firebase,
+          Google Play, Open Food Facts, advertising
+          providers, analytics services, crash
+          reporting services, or other infrastructure
+          providers.
+        </p>
+
+        <p>
+          Third-party services are subject to
+          their own terms and privacy policies.
+        </p>
+
+      </article>
+
+
+      <!-- 10 -->
+
+      <article
+        class="card"
+        id="availability"
+      >
+
+        <h2>
+          10. Availability and Changes
+        </h2>
+
+        <p>
+          We may modify, suspend, replace or
+          discontinue features of GlycoLess
+          when reasonably necessary for
+          maintenance, security, technical
+          improvements, legal requirements,
+          or product changes.
+        </p>
+
+        <p>
+          We do not guarantee that every feature
+          will always be available on every
+          Android device or in every region.
+        </p>
+
+      </article>
+
+
+      <!-- 11 -->
+
+      <article
+        class="card"
+        id="ip"
+      >
+
+        <h2>
+          11. Intellectual Property
+        </h2>
+
+        <p>
+          Unless otherwise stated, GlycoLess,
+          including its software, branding,
+          interface design, graphics, original
+          content and related materials, is owned
+          by or licensed to Sensora Labs.
+        </p>
+
+        <p>
+          You may not copy, modify, distribute,
+          reverse engineer, sell, sublicense,
+          or commercially exploit protected
+          portions of the application except
+          where permitted by applicable law.
+        </p>
+
+      </article>
+
+
+      <!-- 12 -->
+
+      <article
+        class="card"
+        id="termination"
+      >
+
+        <h2>
+          12. Account Termination and Deletion
+        </h2>
+
+        <p>
+          You may stop using GlycoLess at any
+          time.
+        </p>
+
+        <p>
+          Registered users may request account
+          deletion using the process described
+          on the
+          <a href="account-deletion.html">
+            Account Deletion
+          </a>
+          page.
+        </p>
+
+        <p>
+          We may restrict or terminate access
+          where reasonably necessary to address
+          abuse, security risks, fraud, violations
+          of these Terms, or legal requirements.
+        </p>
+
+      </article>
+
+
+      <!-- 13 -->
+
+      <article
+        class="card"
+        id="liability"
+      >
+
+        <h2>
+          13. Disclaimers and Limitation
+        </h2>
+
+        <p>
+          GlycoLess is provided on an
+          availability basis and, to the extent
+          permitted by applicable law, without
+          guarantees that the service will always
+          be uninterrupted, error-free, complete,
+          or suitable for every individual purpose.
+        </p>
+
+        <p>
+          To the maximum extent permitted by
+          applicable law, Sensora Labs will not
+          be responsible for losses arising from
+          reliance on incomplete, inaccurate or
+          outdated food or nutrition information,
+          service interruptions, third-party
+          service failures, or circumstances
+          outside reasonable control.
+        </p>
+
+        <p>
+          Nothing in these Terms excludes or
+          limits rights or liabilities that cannot
+          legally be excluded or limited under
+          applicable law.
+        </p>
+
+      </article>
+
+
+      <!-- 14 -->
+
+      <article
+        class="card"
+        id="law"
+      >
+
+        <h2>
+          14. Governing Law
+        </h2>
+
+        <p>
+          These Terms are intended to be governed
+          by applicable laws of India, subject to
+          mandatory consumer protection and other
+          rights that may apply to you.
+        </p>
+
+        <p>
+          Any dispute should first be addressed
+          by contacting Sensora Labs so that the
+          matter can be reviewed and resolved
+          where reasonably possible.
+        </p>
+
+      </article>
+
+
+      <!-- 15 -->
+
+      <article
+        class="card"
+        id="contact"
+      >
+
+        <h2>
+          15. Contact
+        </h2>
+
+        <p>
+          For questions regarding these Terms,
+          GlycoLess, purchases, account access,
+          or legal matters, contact:
+        </p>
+
+        <p>
+          <strong>
+            Sensora Labs
+          </strong>
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:sensoralabs@gmail.com">
+            sensoralabs@gmail.com
+          </a>
+        </p>
+
+      </article>
+
+
+      <div class="important">
+
+        <strong>
+          Production review required:
+        </strong>
+
+        These Terms should be reviewed against
+        the final production Android application,
+        actual subscription products, third-party
+        SDKs, data practices, and applicable laws
+        before public release.
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        © 2026 Sensora Labs · GlycoLess
+      </div>
+
+      <div class="footer-links">
+
+        <a href="index.html">
+          Legal Center
+        </a>
+
+        <a href="privacy-policy.html">
+          Privacy
+        </a>
+
+        <a href="data-safety.html">
+          Data Safety
+        </a>
+
+        <a href="account-deletion.html">
+          Account Deletion
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
