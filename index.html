@@ -1,1 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="GlycoLess legal information — Privacy Policy, Terms & Conditions, Data Safety and Account Deletion."
+  >
+
+  <meta
+    name="theme-color"
+    content="#10B981"
+  >
+
+  <title>GlycoLess — Legal & Privacy</title>
+
+  <style>
+    :root {
+      --mint: #10B981;
+      --mint-dark: #059669;
+      --teal: #0F766E;
+      --coral: #F97316;
+
+      --bg: #F4FBF8;
+      --surface: #FFFFFF;
+      --surface-soft: #ECFDF5;
+
+      --text: #10231F;
+      --text-secondary: #52635F;
+      --border: #DCEBE6;
+
+      --shadow:
+        0 12px 35px rgba(15, 118, 110, 0.08);
+
+      --radius-lg: 24px;
+      --radius-md: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background:
+        linear-gradient(
+          180deg,
+          #F7FCFA 0%,
+          #F1FAF7 100%
+        );
+
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: rgba(255, 255, 255, 0.90);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(220, 235, 230, 0.8);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.4px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 13px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--mint),
+          var(--teal)
+        );
+
+      color: white;
+
+      font-weight: 800;
+      box-shadow:
+        0 8px 20px rgba(16, 185, 129, 0.20);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-links a {
+      padding: 9px 12px;
+      border-radius: 10px;
+
+      color: var(--text-secondary);
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition:
+        background 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background: var(--surface-soft);
+      color: var(--teal);
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 82px 0 56px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(280px, 0.65fr);
+
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 7px 12px;
+
+      border-radius: 999px;
+
+      background: #E7F9F2;
+      color: var(--teal);
+
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--mint);
+    }
+
+    h1 {
+      margin-top: 20px;
+
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.05;
+
+      letter-spacing: -2.8px;
+      font-weight: 800;
+    }
+
+    .hero-text {
+      max-width: 700px;
+      margin-top: 20px;
+
+      color: var(--text-secondary);
+
+      font-size: 18px;
+    }
+
+    .updated {
+      margin-top: 20px;
+
+      color: #71817D;
+      font-size: 13px;
+    }
+
+    .hero-card {
+      padding: 28px;
+
+      background: var(--surface);
+      border: 1px solid var(--border);
+
+      border-radius: var(--radius-lg);
+
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card-title {
+      font-size: 14px;
+      font-weight: 800;
+
+      color: var(--teal);
+
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-card h2 {
+      margin-top: 10px;
+
+      font-size: 26px;
+      line-height: 1.2;
+    }
+
+    .hero-card p {
+      margin-top: 12px;
+
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    /* Legal cards */
+
+    .section {
+      padding: 30px 0 80px;
+    }
+
+    .section-title {
+      margin-bottom: 24px;
+
+      font-size: 28px;
+      letter-spacing: -0.8px;
+    }
+
+    .legal-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .legal-card {
+      display: flex;
+      flex-direction: column;
+
+      min-height: 230px;
+      padding: 26px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+
+      box-shadow: var(--shadow);
+
+      transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+    }
+
+    .legal-card:hover {
+      transform: translateY(-3px);
+
+      border-color: rgba(16, 185, 129, 0.45);
+
+      box-shadow:
+        0 18px 42px rgba(15, 118, 110, 0.12);
+    }
+
+    .card-icon {
+      width: 46px;
+      height: 46px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 14px;
+
+      background: var(--surface-soft);
+
+      color: var(--teal);
+
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .legal-card h3 {
+      margin-top: 18px;
+
+      font-size: 21px;
+      letter-spacing: -0.4px;
+    }
+
+    .legal-card p {
+      margin-top: 8px;
+
+      color: var(--text-secondary);
+
+      font-size: 14px;
+    }
+
+    .card-link {
+      margin-top: auto;
+      padding-top: 18px;
+
+      color: var(--teal);
+
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .card-link::after {
+      content: " →";
+    }
+
+    /* Information strip */
+
+    .info {
+      margin: 0 0 70px;
+    }
+
+    .info-box {
+      padding: 26px;
+
+      border-radius: var(--radius-lg);
+
+      background:
+        linear-gradient(
+          135deg,
+          #E8FAF3,
+          #F4FBF8
+        );
+
+      border: 1px solid #CDEDE2;
+    }
+
+    .info-box h2 {
+      font-size: 22px;
+    }
+
+    .info-box p {
+      margin-top: 8px;
+
+      color: var(--text-secondary);
+
+      font-size: 14px;
+    }
+
+    /* Contact */
+
+    .contact {
+      padding: 70px 0;
+
+      background: #0E2925;
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 40px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .contact p {
+      margin-top: 12px;
+
+      color: #BBD0CB;
+      font-size: 15px;
+    }
+
+    .email {
+      display: inline-block;
+
+      margin-top: 20px;
+      padding: 12px 16px;
+
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 12px;
+
+      background: rgba(255,255,255,0.06);
+
+      color: white;
+
+      font-weight: 700;
+    }
+
+    .email:hover {
+      background: rgba(255,255,255,0.10);
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 26px 0;
+
+      background: #09211E;
+
+      color: #8EA9A3;
+
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 820px) {
+      .nav-inner {
+        min-height: 64px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 54px;
+      }
+
+      .hero-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .legal-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        padding: 42px 0 36px;
+      }
+
+      h1 {
+        letter-spacing: -1.8px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .legal-card {
+        min-height: auto;
+      }
+
+      .contact {
+        padding: 52px 0;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <header class="nav">
+    <div class="container nav-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="GlycoLess Legal Home"
+      >
+        <span class="brand-mark">G</span>
+        <span>GlycoLess</span>
+      </a>
+
+      <nav
+        class="nav-links"
+        aria-label="Legal navigation"
+      >
+        <a href="privacy-policy.html">
+          Privacy
+        </a>
+
+        <a href="terms-and-conditions.html">
+          Terms
+        </a>
+
+        <a href="data-safety.html">
+          Data Safety
+        </a>
+
+        <a href="account-deletion.html">
+          Account Deletion
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Official Legal Information
+          </span>
+
+          <h1>
+            GlycoLess
+            <br>
+            Legal & Privacy
+          </h1>
+
+          <p class="hero-text">
+            Important information about privacy,
+            data handling, account management,
+            terms of use, and safety for the
+            GlycoLess Android application.
+          </p>
+
+          <p class="updated">
+            Last updated: September 20, 2026
+          </p>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="hero-card-title">
+            Built by Sensora Labs
+          </div>
+
+          <h2>
+            Your data,
+            your control.
+          </h2>
+
+          <p>
+            GlycoLess is designed around
+            transparent data handling and
+            user-controlled account and
+            privacy options.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Legal documents -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Legal documents
+        </h2>
+
+        <div class="legal-grid">
+
+          <article class="legal-card">
+
+            <div class="card-icon">
+              P
+            </div>
+
+            <h3>
+              Privacy Policy
+            </h3>
+
+            <p>
+              Learn what information GlycoLess
+              may collect, how it is used,
+              where it may be stored, and
+              what choices you have.
+            </p>
+
+            <a
+              class="card-link"
+              href="privacy-policy.html"
+            >
+              Read Privacy Policy
+            </a>
+
+          </article>
+
+
+          <article class="legal-card">
+
+            <div class="card-icon">
+              T
+            </div>
+
+            <h3>
+              Terms & Conditions
+            </h3>
+
+            <p>
+              The rules and conditions that
+              apply when using GlycoLess,
+              including subscriptions,
+              third-party services, and
+              important disclaimers.
+            </p>
+
+            <a
+              class="card-link"
+              href="terms-and-conditions.html"
+            >
+              Read Terms & Conditions
+            </a>
+
+          </article>
+
+
+          <article class="legal-card">
+
+            <div class="card-icon">
+              D
+            </div>
+
+            <h3>
+              Data Safety
+            </h3>
+
+            <p>
+              A plain-language overview of
+              the types of information that
+              may be processed by GlycoLess
+              and its supporting services.
+            </p>
+
+            <a
+              class="card-link"
+              href="data-safety.html"
+            >
+              View Data Safety
+            </a>
+
+          </article>
+
+
+          <article class="legal-card">
+
+            <div class="card-icon">
+              A
+            </div>
+
+            <h3>
+              Account Deletion
+            </h3>
+
+            <p>
+              Information about deleting your
+              GlycoLess account and requesting
+              deletion of associated account
+              data.
+            </p>
+
+            <a
+              class="card-link"
+              href="account-deletion.html"
+            >
+              Account Deletion
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Important information -->
+
+    <section class="info">
+
+      <div class="container">
+
+        <div class="info-box">
+
+          <h2>
+            Important information
+          </h2>
+
+          <p>
+            These pages describe the intended
+            privacy, data handling, and legal
+            practices of GlycoLess. The final
+            Google Play Data Safety declaration
+            must always match the exact
+            production Android build and the
+            SDKs/services included in that build.
+          </p>
+
+          <p>
+            For legal or regulatory requirements,
+            the published documents should be
+            reviewed against the final production
+            implementation before release.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section class="contact">
+
+      <div class="container contact-grid">
+
+        <div>
+
+          <h2>
+            Questions about
+            privacy or your data?
+          </h2>
+
+          <p>
+            Contact Sensora Labs for privacy,
+            account, data deletion, or legal
+            questions related to GlycoLess.
+          </p>
+
+        </div>
+
+        <div>
+
+          <a
+            class="email"
+            href="mailto:sensoralabs@gmail.com"
+          >
+            sensoralabs@gmail.com
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        © 2026 Sensora Labs. All rights reserved.
+      </div>
+
+      <div class="footer-links">
+
+        <a href="privacy-policy.html">
+          Privacy
+        </a>
+
+        <a href="terms-and-conditions.html">
+          Terms
+        </a>
+
+        <a href="data-safety.html">
+          Data Safety
+        </a>
+
+        <a href="account-deletion.html">
+          Delete Account
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
